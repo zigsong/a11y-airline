@@ -8,7 +8,6 @@ const Section = styled.section`
   width: 100%;
   padding-top: 4rem;
   margin: auto;
-  box-sizing: border-box;
 `;
 
 const Container = styled.div`
@@ -41,15 +40,15 @@ const NavLink = styled.a`
   font-weight: 500;
 `;
 
-function Home() {
+const Home = () => {
   return (
     <Section>
       <Container>
         <h1>Welcome to Zig Airline</h1>
         <NavContainer>
           <li>
-            <Link href="/">
-              <NavLink>Home</NavLink>
+            <Link href="/spinbutton">
+              <NavLink>SpinButton</NavLink>
             </Link>
           </li>
           <li>
@@ -66,6 +65,6 @@ function Home() {
       </Container>
     </Section>
   );
-}
+};
 
 export default Home;

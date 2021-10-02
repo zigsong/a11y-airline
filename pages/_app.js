@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import GlobalStyle from '../styles/GlobalStyle';
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -12,6 +12,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </>
   );
-}
+};
 
 export default MyApp;
